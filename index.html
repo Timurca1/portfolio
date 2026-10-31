@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тимур Лопатин — Сайты · Telegram-боты · Автоматизация · Android</title>
+<meta name="description" content="Портфолио: сайты, Telegram-боты, автоматизация Excel и Android-приложения для малого бизнеса. ИП на НПД, договор, чек, гарантия.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header class="topbar">
+  <div class="brand">Тимур Лопатин <span>/ портфолио</span></div>
+  <div class="counter"><b id="cur">01</b> / <span id="total">12</span></div>
+</header>
+
+<main class="deck" id="deck">
+
+  <!-- ===== 1. ОБЛОЖКА ===== -->
+  <section class="slide cover" data-title="Обложка">
+    <div class="slide-inner">
+      <div class="cover-badge reveal"><span class="dot"></span> Доступен для новых заказов · Красноярск · 2026</div>
+      <h1 class="reveal">Делаю <span class="grad-text">сайты</span>, <span class="grad-text">Telegram-боты</span><br>и автоматизацию для бизнеса</h1>
+      <p class="lead reveal">Плюс офлайн Android-приложения. Официально: ИП на НПД, договор, чек, гарантия 14–30 дней. Черновик — за 15–30 минут, оплата после того, как вы увидите результат.</p>
+      <div class="stack-pills reveal">
+        <span class="pill">🌐 Сайты и лендинги</span>
+        <span class="pill">🤖 Telegram-боты</span>
+        <span class="pill">⚙️ Автоматизация Excel/PDF</span>
+        <span class="pill">📱 Android (Kotlin)</span>
+      </div>
+      <div class="cover-meta reveal">
+        <span>📍 Красноярск · удалённо по всей РФ</span>
+        <span>🕓 Черновик за 15–30 минут</span>
+        <span>🛡️ Гарантия 14–30 дней</span>
+      </div>
+      <div class="trust reveal">
+        <span class="tag"><b>ИП</b> на НПД</span>
+        <span class="tag"><b>Договор</b></span>
+        <span class="tag"><b>Чек</b> НПД</span>
+        <span class="tag"><b>Акт</b> сдачи</span>
+        <span class="tag"><b>2</b> бесплатные правки</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. ОБО МНЕ ===== -->
+  <section class="slide" data-title="Обо мне">
+    <div class="slide-inner">
+      <div class="slide-title reveal">
+        <span class="eyebrow">Обо мне</span>
+        <h2>Меня зовут <span class="grad-text">Тимур</span></h2>
+        <p>Делаю сайты, ботов и автоматизацию для малого бизнеса. Работаю официально: ИП на НПД, договор, чек, гарантия.</p>
+      </div>
+      <div class="about-grid">
+        <div class="info-card reveal">
+          <h3><span class="ico">🎯</span> Как я работаю</h3>
+          <ul>
+            <li>Сначала черновик за 15–30 минут — вы видите результат до оплаты</li>
+            <li>Фиксирую ТЗ письменно — никаких «я думал по-другому»</li>
+            <li>2 бесплатные правки включены в стоимость</li>
+            <li>Гарантия 14 дней (статика) / 30 дней (сайты с БД)</li>
+          </ul>
+        </div>
+        <div class="info-card reveal">
+          <h3><span class="ico">🧰</span> Что умею</h3>
+          <ul>
+            <li>Лендинги и многостраничники: HTML, CSS, JS</li>
+            <li>Telegram-боты: python-telegram-bot, SQLite, админка</li>
+            <li>Автоматизация: Python, tkinter, openpyxl, COM Excel</li>
+            <li>Android офлайн: Kotlin, Room, WorkManager, виджеты</li>
+          </ul>
+        </div>
+        <div class="info-card reveal">
+          <h3><span class="ico">📄</span> Официально</h3>
+          <ul>
+            <li>ИП Лопатин Тимур Сергеевич</li>
+            <li>Налоговый режим — НПД, не плательщик НДС</li>
+            <li>Договор, акт и чек НПД по каждой работе</li>
+            <li>Оплата: 50% предоплата, 50% после сдачи</li>
+          </ul>
+        </div>
+        <div class="info-card reveal">
+          <h3><span class="ico">⚡</span> Почему ко мне</h3>
+          <ul>
+            <li>Не прошу предоплату «вслепую» — сначала показываю черновик</li>
+            <li>Пишу инструкцию по использованию к каждому проекту</li>
+            <li>Баги по гарантии исправляю бесплатно</li>
+            <li>Отвечаю в WhatsApp/Telegram в течение рабочего дня</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. СТОМАТОЛОГИЯ ===== -->
+  <section class="slide" data-title="Стоматология «Белый клык»">
+    <div class="slide-inner project">
+      <div class="reveal">
+        <span class="eyebrow">Проект · Лендинг</span>
+        <h2>Стоматология <span class="grad-text">«Белый клык»</span></h2>
+        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Яндекс.Карты</span></div>
+        <ul class="feature-list">
+          <li>10 секций: hero, калькулятор, услуги, врачи, отзывы, форма записи</li>
+          <li>Калькулятор стоимости лечения на чистом JS</li>
+          <li>Форма записи с маской телефона и валидацией</li>
+          <li>Адаптив под телефон, планшет и ПК</li>
+          <li>Встроенная Яндекс.Карта с адресом клиники</li>
+        </ul>
+        <a class="btn" href="#" target="_blank" rel="noopener">🔗 Открыть демо (Netlify)</a>
+      </div>
+      <div class="mock-wrap reveal">
+        <div class="mock-frame">
+          <div class="mock-bar"><i></i><i></i><i></i><span class="url">bely-klik.netlify.app</span></div>
+          <div class="mock-body">
+            <img src="assets/dentistry-desktop.svg" alt="Десктопная версия лендинга стоматологии" onerror="this.style.display='none'">
+            <div class="ph"><div class="big">🦷</div><span>Скриншот: десктоп</span></div>
+          </div>
+        </div>
+        <div class="phone"><div class="ph-mini">📱</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. АВТОСЕРВИС ===== -->
+  <section class="slide" data-title="Автосервис «Гараж 55»">
+    <div class="slide-inner project">
+      <div class="reveal">
+        <span class="eyebrow">Проект · Лендинг</span>
+        <h2>Автосервис <span class="grad-text">«Гараж 55»</span></h2>
+        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Анимации при скролле</span></div>
+        <ul class="feature-list">
+          <li>Калькулятор ТО: марка авто × вид работ</li>
+          <li>8 услуг с ценами, мастера с фото</li>
+          <li>5 отзывов с деталями — марки и выполненные работы</li>
+          <li>Форма записи на диагностику</li>
+          <li>Адаптив и анимации появления блоков при скролле</li>
+        </ul>
+        <a class="btn" href="#" target="_blank" rel="noopener">🔗 Открыть демо</a>
+      </div>
+      <div class="mock-wrap reveal">
+        <div class="mock-frame">
+          <div class="mock-bar"><i></i><i></i><i></i><span class="url">garage55.netlify.app</span></div>
+          <div class="mock-body">
+            <img src="assets/garage-desktop.svg" alt="Десктопная версия лендинга автосервиса" onerror="this.style.display='none'">
+            <div class="ph"><div class="big">🔧</div><span>Скриншот: десктоп</span></div>
+          </div>
+        </div>
+        <div class="phone"><div class="ph-mini">📱</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. САЛОН ===== -->
+  <section class="slide" data-title="Салон «Локон»">
+    <div class="slide-inner project">
+      <div class="reveal">
+        <span class="eyebrow">Проект · Лендинг</span>
+        <h2>Салон красоты <span class="grad-text">«Локон»</span></h2>
+        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Playfair Display</span></div>
+        <ul class="feature-list">
+          <li>Калькулятор услуги: мастер — любой / топ / начинающий</li>
+          <li>8 услуг, 4 мастера, галерея работ</li>
+          <li>Блок акций, отзывы, форма записи</li>
+          <li>Элегантный дизайн — шрифт Playfair Display</li>
+          <li>Полный адаптив под все устройства</li>
+        </ul>
+        <a class="btn" href="#" target="_blank" rel="noopener">🔗 Открыть демо</a>
+      </div>
+      <div class="mock-wrap reveal">
+        <div class="mock-frame">
+          <div class="mock-bar"><i></i><i></i><i></i><span class="url">lokon-salon.netlify.app</span></div>
+          <div class="mock-body">
+            <img src="assets/lokon-desktop.svg" alt="Десктопная версия лендинга салона красоты" onerror="this.style.display='none'">
+            <div class="ph"><div class="big">💇</div><span>Скриншот: десктоп</span></div>
+          </div>
+        </div>
+        <div class="phone"><div class="ph-mini">📱</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. СТРОЙДОМ ===== -->
+  <section class="slide" data-title="Строительная компания «СтройДом»">
+    <div class="slide-inner project">
+      <div class="reveal">
+        <span class="eyebrow">Проект · Многостраничный сайт</span>
+        <h2>Строительная компания <span class="grad-text">«СтройДом»</span></h2>
+        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>5 страниц</span></div>
+        <ul class="feature-list">
+          <li>Страницы: Главная, О компании, Услуги, Работы, Контакты</li>
+          <li>Общий CSS и единая навигация по сайту</li>
+          <li>Фильтр проектов по категориям на JS</li>
+          <li>Форма обратной связи на странице контактов</li>
+          <li>Адаптив и бургер-меню для мобильных</li>
+        </ul>
+        <a class="btn" href="#" target="_blank" rel="noopener">🔗 Открыть демо</a>
+      </div>
+      <div class="mock-wrap reveal">
+        <div class="mock-frame">
+          <div class="mock-bar"><i></i><i></i><i></i><span class="url">stroydom.ru → /works</span></div>
+          <div class="mock-body">
+            <img src="assets/stroydom-desktop.svg" alt="Главная страница сайта строительной компании" onerror="this.style.display='none'">
+            <div class="ph"><div class="big">🏗️</div><span>Скриншот: главная + галерея</span></div>
+          </div>
+        </div>
+        <div class="phone"><div class="ph-mini">📱</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. EXCEL ===== -->
+  <section class="slide" data-title="Excel-генератор (кейс)">
+    <div class="slide-inner project">
+      <div class="reveal">
+        <span class="eyebrow">Кейс · Автоматизация</span>
+        <h2>Автоматизация <span class="grad-text">Excel-отчётов</span></h2>
+        <div class="tech-tags"><span>Python</span><span>tkinter</span><span>openpyxl</span><span>pywin32</span><span>PyInstaller</span></div>
+        <div class="problem-solution">
+          <div class="ps-row"><span class="lbl">Проблема</span><span>Соцработник тратила 8 часов в месяц на сборку 30 отчётов вручную.</span></div>
+          <div class="ps-row"><span class="lbl">Решение</span><span>Программа на Python + tkinter + openpyxl с управлением COM Excel.</span></div>
+        </div>
+        <div class="result-line">Результат: <b>8 часов → 15 минут</b>. Ошибки в отчётах исключены.</div>
+        <a class="btn" href="#" target="_blank" rel="noopener">🔗 Смотреть кейс</a>
+      </div>
+      <div class="mock-wrap reveal">
+        <div class="mock-frame">
+          <div class="mock-bar"><i></i><i></i><i></i><span class="url">Excel Generator .exe</span></div>
+          <div class="mock-body">
+            <img src="assets/excel-app.svg" alt="Интерфейс программы генерации отчётов" onerror="this.style.display='none'">
+            <div class="ph"><div class="big">📊</div><span>Интерфейс + готовый отчёт</span></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 8. TELEGRAM-БОТ ===== -->
+  <section class="slide" data-title="Telegram-бот «Локон»">
+    <div class="slide-inner project">
+      <div class="reveal">
+        <span class="eyebrow">Проект · Telegram-бот</span>
+        <h2>Бот записи в салон <span class="grad-text">«Локон»</span></h2>
+        <div class="tech-tags"><span>Python</span><span>python-telegram-bot</span><span>SQLite</span><span>Cloudflare Worker</span></div>
+        <ul class="feature-list">
+          <li>Команды: /start, услуги, цены, мастера, контакты</li>
+          <li>Пошаговая запись: услуга → мастер → имя → телефон → подтверждение</li>
+          <li>Заявки сохраняются в SQLite и видны в админке</li>
+          <li>Inline-кнопки и валидация номера телефона</li>
+          <li>Работает через Cloudflare Worker — обходит блокировку</li>
+        </ul>
+        
+      </div>
+      <div class="reveal">
+  <div class="carousel-wrap">
+    <button class="carousel-btn prev" aria-label="Назад">‹</button>
+    <div class="carousel carousel--wide" data-carousel>
+      <div class="carousel-slide"><img src="assets/портфолио.jpg" alt="Бот: главное меню" loading="lazy"></div>
+      <div class="carousel-slide"><img src="assets/портфолио 2.jpg" alt="Бот: выбор услуги" loading="lazy"></div>
+      <div class="carousel-slide"><img src="assets/портфолио 4.jpg" alt="Бот: пошаговая запись" loading="lazy"></div>
+      <div class="carousel-slide"><img src="assets/портфолио 5.jpg" alt="Бот: подтверждение записи" loading="lazy"></div>
+      <div class="carousel-slide"><img src="assets/портфолио 6.jpg" alt="Бот: админка заявок" loading="lazy"></div>
+      <div class="carousel-slide"><img src="assets/портфолио 7.jpg" alt="Бот: пошаговая запись" loading="lazy"></div>
+      <div class="carousel-slide"><img src="assets/портфолио 8.jpg" alt="Бот: подтверждение записи" loading="lazy"></div>
+      <div class="carousel-slide"><img src="assets/портфолио 9.jpg" alt="Бот: админка заявок" loading="lazy"></div>
+    </div>
+    <button class="carousel-btn next" aria-label="Вперёд">›</button>
+    <div class="carousel-dots" data-dots></div>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <!-- ===== 9. ANDROID ===== -->
+  <section class="slide" data-title="Smart_Notes (Android)">
+    <div class="slide-inner project">
+      <div class="reveal">
+        <span class="eyebrow">Проект · Android</span>
+        <h2>Smart_Notes — <span class="grad-text">заметки и напоминания</span></h2>
+        <div class="tech-tags"><span>Kotlin</span><span>Room</span><span>WorkManager</span><span>AppWidgetProvider</span><span>SoundPool</span></div>
+        <ul class="feature-list">
+          <li>Заметки: создание, редактирование, удаление (свайп + крестик + отмена)</li>
+          <li>Напоминания через WorkManager — работают даже после перезагрузки</li>
+          <li>Виджет 2×1: ближайшее напоминание на рабочем столе</li>
+          <li>Поиск, фильтры и группировка заметок по датам</li>
+          <li>Кастомный дизайн: звуки, анимации, картинки</li>
+        </ul>
+        <div class="result-line">Работает <b>полностью офлайн</b>. Не требует интернета и регистрации.</div>
+        
+      </div>
+      <div class="reveal">
+  <div class="carousel-wrap">
+    <button class="carousel-btn prev" aria-label="Назад">‹</button>
+    <div class="carousel" data-carousel>
+      <div class="carousel-slide"><img src="assets/список заметок.jpg" alt="Smart_Notes: список заметок" loading="lazy"></div>
+      <div class="carousel-slide"><img src="assets/карточка заметки.jpg" alt="Smart_Notes: карточка заметки" loading="lazy"></div>
+      <div class="carousel-slide"><img src="assets/виджет.jpg" alt="Smart_Notes: виджет на рабочем столе" loading="lazy"></div>
+      <div class="carousel-slide"><img src="assets/напоминание.jpg" alt="Smart_Notes: напоминание" loading="lazy"></div>
+    </div>
+    <button class="carousel-btn next" aria-label="Вперёд">›</button>
+    <div class="carousel-dots" data-dots></div>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <!-- ===== 10. ПРАЙС ===== -->
+  <section class="slide" data-title="Прайс">
+    <div class="slide-inner">
+      <div class="slide-title reveal">
+        <span class="eyebrow">Стоимость</span>
+        <h2>Прайс на услуги</h2>
+        <p>Фиксированные цены за типовые проекты. Сложные задачи — оцениваю после короткого брифа.</p>
+      </div>
+      <div class="price-grid">
+  <div class="price-col reveal">
+    <div class="head">🌐 Статика (A)</div>
+    <ul>
+      <li>Визитка <b>4 000 ₽</b></li>
+      <li>Лендинг <b>6 000 ₽</b></li>
+      <li>Многостраничник <b>10 000 ₽</b></li>
+      <li>Портфолио <b>5 000 ₽</b></li>
+      <li>Приглашение <b>3 000 ₽</b></li>
+      <li>Под товар <b>5 000 ₽</b></li>
+      <li>Вёрстка Figma <b>4 000 ₽</b></li>
+    </ul>
+  </div>
+
+  <div class="price-col reveal">
+    <div class="head">🗄️ Сайты с БД (B)</div>
+    <ul>
+      <li>Каталог базовый <b>20 000 ₽</b></li>
+      <li>Каталог стандарт <b>31 000 ₽</b></li>
+      <li>Каталог расширенный <b>41 000 ₽</b></li>
+      <li>Магазин без оплаты <b>36 000 ₽</b></li>
+      <li>Магазин + ЮKassa <b>47 000 ₽</b></li>
+      <li>Магазин + промокоды <b>53 000 ₽</b></li>
+    </ul>
+  </div>
+
+  <div class="price-col reveal">
+    <div class="head">🤖 Боты (C)</div>
+    <ul>
+      <li>Бот-визитка <b>4 000 ₽</b></li>
+      <li>Бот записи <b>8 000 ₽</b></li>
+      <li>Бот-квиз <b>6 000 ₽</b></li>
+      <li>Бот-магазин <b>12 000 ₽</b></li>
+    </ul>
+  </div>
+
+  <div class="price-col reveal">
+    <div class="head">⚙️ Автоматизация (D)</div>
+    <ul>
+      <li>Excel-генератор <b>4 000 ₽</b></li>
+      <li>Сводка файлов <b>3 000 ₽</b></li>
+      <li>PDF-генератор <b>3 500 ₽</b></li>
+      <li>Word DOCX <b>4 500 ₽</b></li>
+    </ul>
+  </div>
+
+  <div class="price-col reveal">
+    <div class="head">📱 Android (E)</div>
+    <ul>
+      <li>Заметки / напоминалки <b>6–10 к ₽</b></li>
+      <li>Трекер / дневник <b>10–15 к ₽</b></li>
+      <li>Таймер / помодоро <b>6–8 к ₽</b></li>
+      <li>Приложение + виджет <b>15–20 к ₽</b></li>
+    </ul>
+  </div>
+</div>
+
+<p class="price-note reveal">
+  В стоимость входят 2 бесплатные правки, инструкция, чек НПД. Предоплата 50%.
+  Политика конфиденциальности для статики — опция <b>+1 000 ₽</b>.
+  Правки после гарантии — 800 ₽/час (A, C, D, E), 1 200 ₽/час (B), 500 ₽ фикс.
+</p>
+    </div>
+  </section>
+
+  <!-- ===== 11. ПРОЦЕСС ===== -->
+  <section class="slide" data-title="Как я работаю">
+    <div class="slide-inner">
+      <div class="slide-title reveal">
+        <span class="eyebrow">Процесс</span>
+        <h2>Как я <span class="grad-text">работаю</span></h2>
+        <p>Прозрачно и по шагам: вы всегда знаете, на каком этапе проект и что будет дальше.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="num">01</div><h3>Заявка</h3><p>Пишете в WhatsApp или Telegram — обсуждаем задачу и сроки.</p></div>
+        <div class="step reveal"><div class="num">02</div><h3>Бриф</h3><p>Фиксируем техническое задание письменно. Никаких «я думал по-другому».</p></div>
+        <div class="step reveal"><div class="num">03</div><h3>Черновик за 15–30 минут</h3><p>Вы видите результат ещё до оплаты и вносите правки по концепции.</p></div>
+        <div class="step reveal"><div class="num">04</div><h3>Предоплата 50%</h3><p>Начинаю основной этап и довожу проект до готового состояния.</p></div>
+        <div class="step reveal"><div class="num">05</div><h3>Сдача</h3><p>Акт, чек НПД и понятная инструкция по использованию проекта.</p></div>
+        <div class="step reveal"><div class="num">06</div><h3>Гарантия 14–30 дней</h3><p>Баги в рамках ТЗ исправляю бесплатно — статика 14 дней, сайты с БД 30 дней.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 12. КОНТАКТЫ ===== -->
+  <section class="slide" data-title="Контакты">
+    <div class="slide-inner contact-grid">
+      <div class="reveal">
+        <span class="eyebrow">Контакты</span>
+        <h2>Напишите — обсудим <span class="grad-text">вашу задачу</span></h2>
+        <p class="lead">Отвечаю в течение рабочего дня. Первый черновик — за 15–30 минут, чтобы вы сразу увидели результат.</p>
+        <div class="contact-list">
+          <a class="contact-item" href="https://wa.me/79029660857" target="_blank" rel="noopener">
+            <div class="ico">💬</div>
+            <div><div class="label">WhatsApp</div><div class="value">+7 (902) 966-08-57</div></div>
+          </a>
+          <a class="contact-item" href="https://t.me/Chocola125" target="_blank" rel="noopener">
+            <div class="ico">✈️</div>
+            <div><div class="label">Telegram</div><div class="value">@Chocola125</div></div>
+          </a>
+          <a class="contact-item" href="mailto:timlopatin11@gmail.com">
+            <div class="ico">✉️</div>
+            <div><div class="label">Email</div><div class="value">timlopatin11@gmail.com</div></div>
+          </a>
+          <div class="contact-item">
+            <div class="ico">📍</div>
+            <div><div class="label">География</div><div class="value">Красноярск · удалённо по всей России</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="legal-card reveal">
+        <h3>Реквизиты</h3>
+        <dl>
+          <div><dt>Исполнитель</dt><dd>ИП Лопатин Тимур Сергеевич</dd></div>
+          <div><dt>ИНН</dt><dd>242305434102</dd></div>
+          <div><dt>ОГРНИП</dt><dd>326246800116361</dd></div>
+          <div><dt>Налоговый режим</dt><dd>НПД · не плательщик НДС</dd></div>
+          <div><dt>Документы</dt><dd>Договор · Акт · Чек НПД</dd></div>
+        </dl>
+        <div class="legal-badges">
+          <span>Договор</span><span>Акт сдачи</span><span>Чек НПД</span><span>Гарантия 14–30 дней</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<nav class="nav" aria-label="Навигация по слайдам">
+  <button class="arrow" id="prev" aria-label="Назад">‹</button>
+  <div class="dots" id="dots"></div>
+  <button class="arrow" id="next" aria-label="Вперёд">›</button>
+</nav>
+
+<div class="hint" id="hint">
+  <kbd>←</kbd><kbd>→</kbd> листать · <kbd>F11</kbd> полный экран
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
