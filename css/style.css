@@ -174,14 +174,64 @@ h3 { font-size: 1.05rem; font-weight: 700; }
 .mock-body .ph .big { font-size: 2.2rem; }
 .mock-body .ph span { font-size: .82rem; letter-spacing: .1em; text-transform: uppercase; opacity: .8; }
 
+/* Телефон с реальным скриншотом мобильной версии */
 .phone {
-  width: 108px; aspect-ratio: 9 / 18.5; border-radius: 18px;
-  border: 2px solid rgba(255,255,255,.14); background: #0f1522;
-  position: absolute; right: -85px; bottom: -22px; overflow: hidden;
-  box-shadow: var(--shadow);
+  width: 140px;
+  aspect-ratio: 9 / 18.5;
+  border-radius: 22px;
+  border: 3px solid rgba(255,255,255,.18);
+  background: #0f1522;
+  position: absolute;
+  right: -30px;
+  bottom: -26px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.05);
+  z-index: 3;
+  transform: rotate(2deg);
+  transition: transform .3s ease;
 }
-.phone .ph-mini { width: 100%; height: 100%; background: linear-gradient(160deg, rgba(108,92,231,.35), rgba(0,210,198,.25)); display: grid; place-content: center; font-size: 1.4rem; }
-.phone::after { content: ""; position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 34px; height: 5px; border-radius: 4px; background: rgba(255,255,255,.25); }
+.phone:hover { transform: rotate(0deg) scale(1.03); }
+
+.phone img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+/* «Чёлка» и кнопка «домой» — как у настоящего телефона */
+.phone::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 5px;
+  border-radius: 4px;
+  background: rgba(255,255,255,.25);
+  z-index: 2;
+}
+.phone::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44px;
+  height: 4px;
+  border-radius: 4px;
+  background: rgba(255,255,255,.2);
+  z-index: 2;
+}
+
+@media (max-width: 1000px) {
+  .phone { width: 110px; right: -14px; bottom: -14px; }
+}
+@media (max-width: 640px) {
+  .phone { width: 88px; right: -8px; bottom: -8px; border-width: 2px; }
+}
 .mock-wrap { position: relative; padding-right: 26px; padding-bottom: 22px; }
 
 .tech-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
