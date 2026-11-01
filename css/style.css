@@ -52,7 +52,7 @@ body::before {
   position: absolute; inset: 0;
   display: flex; flex-direction: column;
   justify-content: center;
-  padding: clamp(28px, 6vh, 76px) clamp(24px, 7vw, 120px) clamp(80px, 12vh, 110px);
+  padding: clamp(90px, 11vh, 110px) clamp(24px, 7vw, 120px) clamp(80px, 12vh, 110px);
   opacity: 0; visibility: hidden;
   transform: translateY(26px) scale(0.99);
   transition: opacity .5s ease, transform .5s cubic-bezier(.2,.8,.2,1), visibility .5s;
@@ -505,4 +505,21 @@ h3 { font-size: 1.05rem; font-weight: 700; }
   .carousel--wide .carousel-slide {
     flex: 0 0 100%;      /* = 92% от всей ширины телефона */
   }
+}
+
+@media (max-width: 768px) {
+  .hero__inner { padding: 44px 0 40px; }
+  .hero h1 { font-size: 1.9rem; margin-bottom: 16px; }
+  .hero p { font-size: 1rem; margin-bottom: 24px; }
+  .hero__actions { margin-bottom: 28px; }
+  .hero__stats { gap: 18px 24px; }
+  .hero__stat b { font-size: 1.7rem; }
+}
+@media (max-width: 480px) {
+  .hero__inner { padding: 32px 0 32px; }
+  .hero h1 { font-size: 1.55rem; line-height: 1.2; }
+  .hero h1 br { display: none; }  /* убираем жёсткий перенос */
+  .hero__actions { flex-direction: column; }
+  .hero__actions .btn { width: 100%; padding: 12px 20px; font-size: 0.9rem; }
+  .hero__stats { grid-template-columns: 1fr; }
 }
